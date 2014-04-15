@@ -813,7 +813,7 @@
 	<script src="<%request.getContextPath();%>resources/js/jquery.js"></script>
 	<script src="<%request.getContextPath();%>resources/js/jquery.easing.1.3.js"></script>
     <script src="<%request.getContextPath();%>resources/js/bootstrap.min.js"></script>
-	<script src="<%request.getContextPath();%>resources/https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
 	<script src="<%request.getContextPath();%>resources/js/jquery.isotope.min.js"></script>
 	<script src="<%request.getContextPath();%>resources/js/jquery.nicescroll.min.js"></script>
 	<script src="<%request.getContextPath();%>resources/js/fancybox/jquery.fancybox.pack.js"></script>
