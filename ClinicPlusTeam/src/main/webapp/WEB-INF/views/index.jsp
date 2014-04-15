@@ -809,21 +809,21 @@
         
         
 
-	<script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-	<script src="js/jquery.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
-	<script src="js/jquery.isotope.min.js"></script>
-	<script src="js/jquery.nicescroll.min.js"></script>
-	<script src="js/fancybox/jquery.fancybox.pack.js"></script>
-	<script src="js/skrollr.min.js"></script>		
-	<script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
-	<script src="js/jquery.localscroll-1.2.7-min.js"></script>
-	<script src="js/stellar.js"></script>
-	<script src="js/jquery.appear.js"></script>
-	<script src="js/validate.js"></script>
-    <script src="js/main.js"></script>
+	<script src="<%request.getContextPath();%>resources/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	<script src="<%request.getContextPath();%>resources/js/jquery.js"></script>
+	<script src="<%request.getContextPath();%>resources/js/jquery.easing.1.3.js"></script>
+    <script src="<%request.getContextPath();%>resources/js/bootstrap.min.js"></script>
+	<script src="<%request.getContextPath();%>resources/https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+	<script src="<%request.getContextPath();%>resources/js/jquery.isotope.min.js"></script>
+	<script src="<%request.getContextPath();%>resources/js/jquery.nicescroll.min.js"></script>
+	<script src="<%request.getContextPath();%>resources/js/fancybox/jquery.fancybox.pack.js"></script>
+	<script src="<%request.getContextPath();%>resources/js/skrollr.min.js"></script>		
+	<script src="<%request.getContextPath();%>resources/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+	<script src="<%request.getContextPath();%>resources/js/jquery.localscroll-1.2.7-min.js"></script>
+	<script src="<%request.getContextPath();%>resources/js/stellar.js"></script>
+	<script src="<%request.getContextPath();%>resources/js/jquery.appear.js"></script>
+	<script src="<%request.getContextPath();%>resources/js/validate.js"></script>
+    <script src="<%request.getContextPath();%>resources/js/main.js"></script>
         <script type="text/javascript">
             // When the window has finished loading create our google map below
             google.maps.event.addDomListener(window, 'load', init);
