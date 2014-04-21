@@ -1,0 +1,30 @@
+!SESSION 2014-04-16 20:59:04.662 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/jonathandesjardins/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/jonathandesjardins/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-04-16 20:59:58.289
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.mylyn.tasks.ui 4 0 2014-04-16 21:00:01.791
+!MESSAGE Could not load repository template extension contributed by org.springsource.ide.eclipse.dashboard.ui with connectorKind jira
+
+!ENTRY org.eclipse.mylyn.tasks.ui 4 0 2014-04-16 21:00:01.791
+!MESSAGE Could not load repository template extension contributed by org.springsource.ide.eclipse.dashboard.ui with connectorKind jira
+
+!ENTRY org.springsource.ide.eclipse.commons.frameworks.core 0 0 2014-04-16 21:00:25.110
+!MESSAGE Result of converting legacy STS 2.x workspace preferences to 3.x
+!SUBENTRY 1 org.springsource.ide.eclipse.commons.frameworks.core 0 0 2014-04-16 21:00:25.110
+!MESSAGE Converted legacy STS plugin preferences
+!SUBENTRY 1 unknown 0 0 2014-04-16 21:00:25.110
+!MESSAGE OK
+!SUBENTRY 1 org.springsource.ide.eclipse.commons.frameworks.core 0 0 2014-04-16 21:00:25.110
+!MESSAGE Converted legacy Roo plugin state locations
+!SUBENTRY 1 org.springsource.ide.eclipse.commons.frameworks.core 0 0 2014-04-16 21:00:25.110
+!MESSAGE Converted legacy STS plugin state locations
+
+!ENTRY org.eclipse.core.jobs 2 2 2014-04-16 21:00:42.957
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.springframework.ide.eclipse.roo.core.RooCoreActivator$1
