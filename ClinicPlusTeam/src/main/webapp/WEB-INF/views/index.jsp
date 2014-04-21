@@ -64,7 +64,6 @@
 							<h2 class="slogan">Bienvenue à ClinicPlus</h2>
 							<p>
 							CliniquePlus vous permet de gérer vos rendez-vous. 
-				
 							</p>
                                                         <br>
                                                         <a href="<%request.getContextPath();%>resources/pages/connection/login.html"  title="Admin"><i class="fa fa-user fa-5x mar-bot20 align-center"></i></a>
@@ -168,10 +167,10 @@
 										<div class="testimonial pad-top40 pad-bot40 clearfix">
 											<h5>
 												« Depuis que le système de CliniquePlus® est implanté chez nous, 
-                                                                                                les médecins et le personnel administratif ont constaté que la 
-                                                                                                gestion quotidienne de la clinique est simplifiée. 
-                                                                                                La longue file d’attente matinale est chose du passé et nos patients 
-                                                                                                n’ont plus à attendre aussi longtemps pour nous rencontrer. »
+                                                  les médecins et le personnel administratif ont constaté que la 
+                                                  gestion quotidienne de la clinique est simplifiée. 
+                                                  La longue file d’attente matinale est chose du passé et nos patients 
+                                                  n’ont plus à attendre aussi longtemps pour nous rencontrer. »
 											</h5>
 											<br/>
 											<span class="author">&mdash; Madame Julie Lessard, coordonnatrice des cliniques Camu de Montréal </a></span>
@@ -214,7 +213,7 @@
                                                                         <h4>Prélèvements</h4>                                                 
                                                                         </div>
                                                                     <h5><a href="#">Pour plus d'info</a></h5>
-                                                                    <a href="<%request.getContextPath();%>resources/img/services/prelevement.jpg" class="fancybox">
+                                                                    <a href="<%request.getContextPath();%>resources/text/info.txt" class="fancybox">
                                                                     <i class="fa fa-plus fa-2x"></i></a>
                                                                 </div>
 							</div>
