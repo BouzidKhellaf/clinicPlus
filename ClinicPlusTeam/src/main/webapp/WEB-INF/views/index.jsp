@@ -327,11 +327,10 @@
 					
                         <div class="row">
                           <nav id="filter" class="col-md-12 text-center">
-                            <ul>
-                              <li><a href="#" class="current btn-theme btn-small" data-filter="*">Tous</a></li>
+                            <ul class="current" data-filter="">
                               <li><a href="#"  class="btn-theme btn-small" data-filter=".medecin" >Médecins</a></li>
                               <li><a href="#"  class="btn-theme btn-small" data-filter=".infirmières">Infirmières</a></li>
-                              <li ><a href="#" class="btn-theme btn-small" data-filter=".infirmières_praticiennes">Infirmières praticiennes</a></li>
+                              <li><a href="#" class="btn-theme btn-small" data-filter=".infirmières_praticiennes">Infirmières praticiennes</a></li>
                             </ul>
                           </nav>
                           <div class="col-md-12">
@@ -557,7 +556,7 @@
 							  </div>
 							  <div class="form-group">
 								<label for="adresse">Adresse</label>
-								<input type="text" class="form-control" name="adresse" id="sadresse" placeholder="Adresse" data-rule="maxlen:4" data-msg="S.V.P. Entrez au moin 4 caractères" />
+								<input type="text" class="form-control" name="adresse" id="adresse" placeholder="Adresse" data-rule="maxlen:4" data-msg="S.V.P. Entrez au moin 4 caractères" />
 								<div class="validation"></div>
 							  </div>
                                                             <div class="form-group">
@@ -579,15 +578,11 @@
 					</div>
 					<!-- ./span12 -->
 				</div>
-                                 
-                                </div>
-									
-                                </article>
-
-
-                                <article class="col-md-4 isotopeItem horaire">
-                                    
-                                    <div class="container">                   <!-- Main content -->
+                </div>
+				</article>
+				
+				<article class="col-md-4 isotopeItem horaire">
+                <div class="container">
                 <section class="content">
                     <div class="row">
                         <div class="col-xs-12">
@@ -596,21 +591,44 @@
                                     <h3 class="box-title">Horaire des rendez-vous</h3>                                    
                                 </div><!-- /.box-header -->
                                 <div class="box-body table-responsive">
-                                    <table id="example2" class="table table-bordered table-hover">
-                                        <thead>
+                                    <table id="Horaire" class="table table-bordered table-hover">
+                                        <thead>                              
                                             <tr>
                                                 <th>Heure</th>
-                                                <th>Spécisaliste</th>
-                                                <th>Disponibilité</th>
-                                                <th>Réserver</th>
                                                 
+                                                <th>
+                                                <div class="btn-group">
+  												<button class="btn btn-info">Spécisaliste</button>
+  												<button class="btn dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> </button>
+  												<ul class="dropdown-menu">
+    												<li><a href="#"><i class="icon-user"></i> Dr. Mann</a></li>
+    												<li><a href="#"><i class="icon-user"></i> Dr. Ui</a></li>
+    												<li><a href="#"><i class="icon-user"></i> Dr. Chose</a></li>
+    												<li class="divider"></li>
+    												<li><a href="#"><i class="icon-user"></i> Inf. Flouflou</a></li>
+  												</ul>
+												</div>
+												</th>
+												
+                                                <th>
+                                                <div class="btn-group">
+  												<button class="btn btn-info">Disponibilité</button>
+  												<button class="btn dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> </button>
+  												<ul class="dropdown-menu">
+    												<li><a href="#"><i class="icon-user"></i> Libre</a></li>
+    												<li><a href="#"><i class="icon-user"></i> Occupé</a></li>
+    											</ul>
+												</div>
+												</th>
+                                          
+                                                <th>Réserver</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
+                                            <tr th:each="docteur,status : ${menuItems}">
                                                 <td>08:00</td>
-                                                <td>Dr. Ui</td>
-                                                <td>Occupé</td>
+                                                <td>th:text="${docteur.name}"i</td>
+                                                <td>th:text="${docteur.disp}"</td>
                                                 <td> <div class="form-group"><input type="radio" name="r2" class="minimal-red"/></div></td>
                                             </tr>
                                             <tr>
@@ -655,8 +673,6 @@
                                                 <td>Occupé</td>
                                                  <td> <div class="form-group"><input type="radio" name="r2" class="minimal-red"/></div></td>
                                             </tr>
-                                            
-                                            
                                         </tbody>
                                         <tfoot>
                                             <tr>
@@ -664,27 +680,25 @@
                                                 <th>Spécisaliste</th>
                                                 <th>Disponibilité</th>
                                                 <th>Réserver</th>
-                                                
-                                            </tr>
-                                            <button type="submit" class="btn btn-theme pull-left">Réserver</button>
-                                        </tfoot>
+                                                </tr>
+                                            </tfoot>                  
                                     </table>
+                                    
+                                    <button type="submit" class="btn btn-theme pull-left">Réserver</button>
+                                    
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
                             </section>
                             </div>
-									
-                                </article>
-                                                                            
-                                </div>
-                                </div>
-                                </div>
-                        </div>                     
+							</article>
+                    	</div>
+                	</div>
+            	</div>
+        	</div>                     
 		</div>
-                 <!-- /section rendez-vous -->           
-                            
-                            
-		</section>
+        </section>
+        <!-- /section rendez-vous -->
+		
 		<section id="parallax2" class="section parallax" data-stellar-background-ratio="0.5">	
             <div class="align-center pad-top40 pad-bot40">
                 <blockquote class="bigquote color-white">L'art, c'est la santée!</blockquote>
@@ -711,11 +725,14 @@
 					</div>
 				</div>
             
-            <!-- contact -->        
+            <!-- contact -->
+            <br>        
 			<div class="container">
 				<div class="row mar-bot40">
 					<div class="col-md-offset-3 col-md-6">
 						<div class="section-header">
+						<br>
+						<i class="fa fa fa-pencil fa-5x mar-bot20"></i>
 							<h2 class="section-heading animated" data-animation="bounceInUp">Contactez-nous</h2>
 							<p>Si vous avez des questions, des commmentaires, n'hésitez pas à nous écrire.</p>
 						</div>
