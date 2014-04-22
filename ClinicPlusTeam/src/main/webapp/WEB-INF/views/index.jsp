@@ -65,11 +65,11 @@
 							<p>
 							CliniquePlus vous permet de gérer vos rendez-vous. 
 							</p>
-                                                        <br>
-                                                        <a href="<%request.getContextPath();%>resources/pages/connection/login.html"  title="Admin"><i class="fa fa-user fa-5x mar-bot20 align-center"></i></a>
-                                                        <p>
-                                                            Se connecter en tant qu'administrateur
-                                                        </p>
+                            	<br>
+                                	<a href="<%request.getContextPath();%>resources/pages/connection/login.html"  title="Admin"><i class="fa fa-user fa-5x mar-bot20 align-center"></i></a>
+                                		<p>
+                                			Se connecter en tant qu'administrateur
+                                		</p>
 						</div>
 					</div>
 				</div>
@@ -81,17 +81,14 @@
 		<!-- services -->
 		<section id="section-a_propos" class="section pad-bot30 bg-white">
 		<div class="container"> 
-		
-                        
 			<div class="row mar-bot40">
-
 				<div class="col-lg-4" >
 					<div class="align-center">
-                                            <br>
+                        <br>
 						<i class="fa fa-plus-square fa-5x mar-bot20"></i>
 						<h4 class="text-bold">Une nouvelle génération de clinique médicale à Montréal!</h4>
 						<p>Située en plein cœur du centre-ville de Montréal, à deux pas du métro McGill, 
-                                                    CliniquePlus est vraiment une clinique de nouvelle génération.
+                           CliniquePlus est vraiment une clinique de nouvelle génération.
 						</p>
 					</div>
 				</div>
@@ -698,33 +695,24 @@
 		<!-- coordonnés -->
 		<section id="section-contact" class="section appear clearfix">
                     
-                    
                     <div class="col-lg-4" >
 					<div class="align-center">
-                                            <br>
+                        <br>
 						<i class="fa fa-plus-square fa-5x mar-bot20"></i>
+						
+						<!-- adresse -->
 						<h4 class="text-bold">Adresse</h4>
-                                                <p>
-                                                    CliniquePlus
-						</p>
-						<p>
-                                                    1390 rue Saint-Jacques
-						</p>
-                                                
-                                                <p>
-                                                    Montréal, Qc, Canada
-						</p>
-                                                <p>
-                                                    H2C 0A1
-						</p>
-                                                <p>
-                                                    Tel: 514 665-6656
-						</p>
+                        	<p>CliniquePlus</p>
+							<p>1390 rue Saint-Jacques</p>
+                            <p>Montréal, Qc, Canada</p>
+                            <p>H2C 0A1</p>
+                            <p>Tel: 514 665-6656</p>
+                            <!-- /adresse -->
 					</div>
 				</div>
-                    
+            
+            <!-- contact -->        
 			<div class="container">
-				
 				<div class="row mar-bot40">
 					<div class="col-md-offset-3 col-md-6">
 						<div class="section-header">
@@ -760,55 +748,48 @@
 								<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="S.V.P. Écrivez quelque chose pour nous"></textarea>
 								<div class="validation"></div>
 							  </div>
-							  
 							  <button type="submit" class="btn btn-theme pull-left">ENVOYER MESSAGE</button>
-							</form>
-
+							  </form>
 						</div>
 					</div>
 					<!-- ./span12 -->
 				</div>
-				
 			</div>
+			<!-- /contact -->
 		</section>
-                <!-- /coordonnés -->
+        <!-- /coordonnés -->
                 
                 
-                
-		<!-- carte -->
+        <!-- carte -->
 		<section id="section-map" class="clearfix">
 			<div id="map"></div>
 		</section>
-		
+		<!-- /carte --> 
+	
+	<!-- media sociaux -->	
 	<section id="footer" class="section footer">
 		<div class="container">
 			<div class="row animated opacity mar-bot20" data-andown="fadeIn" data-animation="animation">
 				<div class="col-sm-12 align-center">
                     <ul class="social-network social-circle">
-                        <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="http://feedity.com/facebook-com/VVJaVltU.rss" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
                         <li><a href="https://www.facebook.com/CliniquePlus" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>   
+                        <li><a href="https://twitter.com/CliniquePlus" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
                     </ul>				
 				</div>
-                            
-			</div>
-
-			<div class="row align-center copyright">
+            </div>
+					<div class="row align-center copyright">
 					<div class="col-sm-12"><p>Copyright &copy; 2014 Laid-Bouzid-Jonathan </p></div>
 			</div>
 		</div>
 
 	</section>
-        <!-- /carte -->        
-        
+    <!-- /media sociaux -->        
+    
+    <!-- js -->     
 	<a href="#header" class="scrollup"><i class="fa fa-chevron-up"></i></a>
         
-        
-
-	<script src="<%request.getContextPath();%>resources/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script src="<%request.getContextPath();%>resources/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 	<script src="<%request.getContextPath();%>resources/js/jquery.js"></script>
 	<script src="<%request.getContextPath();%>resources/js/jquery.easing.1.3.js"></script>
     <script src="<%request.getContextPath();%>resources/js/bootstrap.min.js"></script>
@@ -823,7 +804,11 @@
 	<script src="<%request.getContextPath();%>resources/js/jquery.appear.js"></script>
 	<script src="<%request.getContextPath();%>resources/js/validate.js"></script>
     <script src="<%request.getContextPath();%>resources/js/main.js"></script>
-        <script type="text/javascript">
+    <!-- /js -->
+    
+    <!-- carte -->
+    <script type="text/javascript">
+    
             // When the window has finished loading create our google map below
             google.maps.event.addDomListener(window, 'load', init);
         
@@ -850,5 +835,7 @@
                 var map = new google.maps.Map(mapElement, mapOptions);
             }
         </script>
+        <!-- /carte -->
+        
 	</body>
 </html>
