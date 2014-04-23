@@ -52,6 +52,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </a>
                 <div class="navbar-right">
                     <ul class="nav navbar-nav">
@@ -152,8 +153,6 @@
                                 <small class="badge pull-right bg-red">3</small>
                             </a>
                         </li>
-                        
-                        
                     </ul>
                 </section>
                 <!-- /.sidebar -->
